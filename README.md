@@ -84,12 +84,14 @@ The program starts when the user enters a number between 1 and 6 in the terminal
 ---
 **Made with 💫 magic and Python.**
 ---
+
 *Prepared by:* [Başak Yaralı]
 *Github:* [byart0]
 *edX:* [basakyarali_66]
 *Date Saved:* 2025-07-31
 *Location:* [İstanbul, Türkiye]
 *e-mail:* [basakyarali@gmail.com]
+
 ---
 **Made with 💫 magic and Python**
 ---
