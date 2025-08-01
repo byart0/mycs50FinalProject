@@ -2,13 +2,13 @@
 #### Video Demo:  <https://youtu.be/G6pPXEIA1gI>
 #### Description:
 
-Photo Organizer Wizard is a Python **command-line application** that organizes photo files based on the dates and keywords in their filenames. The project allows users to search photo names in the **photos.txt** file, list photos taken on specific dates, view active days, detect invalid or incorrectly formatted photos, and export the results to CSV files. **Don't forget young wizard, this organizer was made with 💫 magic and Python.**
+Photo Organizer Wizard is a Python **command-line tool** that organizes photo files based on the dates and keywords in their filenames. The project allows users to search photo names in the **photos.txt** file, list photos taken on specific dates, view active days, detect invalid or incorrectly formatted photos, and export the results to CSV files. **Don't forget young wizard, this organizer was made with 💫 magic and Python.**
 
 ---
 
 ## Project Purpose
 
-This application is developed especially for users who want to easily group and manage a large number of photos by date and keywords. Photo filenames must include a date (in the **YYYY-MM-DD** format) and descriptive keywords (e.g., sunset, beach, selfie, etc.). Users can search by specific keywords or list photos by date. Also, users can detect invalid formatted photos easily. Additionally, by using an **API**, the app also displays the temperature of the photo location on the day it was taken. The primary purpose of this program is to refresh memories and make them easier to recall.
+This application is developed especially for users who want to easily group and manage a large number of photos by date and keywords. Photo filenames must include a date (in the **YYYY-MM-DD format**) and descriptive keywords (e.g., sunset, beach, selfie, etc.). Users can search by specific keywords or list photos by date. Also, users can detect invalid formatted photos easily. Additionally, by using an **API**, the app also displays the temperature of the photo location on the day it was taken. The primary purpose of this program is to refresh memories and make them easier to recall.
 
 ---
 
@@ -17,7 +17,7 @@ This application is developed especially for users who want to easily group and 
 - **project.py**: The main execution file of the project. It takes commands from the user via a menu and calls the relevant functions.
 - **photos.txt**: A text file containing photo filenames line by line. It is the data source of the program.
 - **requirements.txt**: This file contains the names of the libraries used and installed in the project.
-- **CSV Dosyaları**: `export_grouped_data`function exports photos and keywords grouped by date to CSV files.
+- **CSV Files**: `export_grouped_data`function exports photos and keywords grouped by date to CSV files.
 - **menu.txt**: Contains the command menu text shown to the user.
 - **text_project.py**: The main logic and user interaction management file of the project. It handles reading photo files and extracting dates and keywords from filenames.
 
@@ -40,7 +40,7 @@ This application is developed especially for users who want to easily group and 
 
 To keep the project simple yet modular, functions were divided for clear responsibilities, and a menu system was designed to present each operation like a **spell** to the user. To avoid disrupting the program's flow, the menu system is stored in a separate file named **menu.txt**, which is read and displayed continuously until the user exits. To reduce clutter in the terminal, the menu is displayed with a **2-second delay.**
 
-Regex usage was critical to correctly extract dates and keywords from photo filenames. The regular expressions were designed based on the photo filenames listed in **photos.txt**. For a photo file to be considered invalid, it simply needs to not start with a date followed by an underscore. **All photo files, including invalid ones, end with .png, .jpg, or .jpeg. No other file types are present in the photos.txt file.**
+Regex usage was critical to correctly extract dates and keywords from photo filenames. The regular expressions were designed based on the photo filenames listed in **photos.txt**.**For a photo file to be considered invalid, it simply needs to not start with a date followed by an underscore. All photo files, including invalid ones, end with .png, .jpg, or .jpeg. No other file types are present in the photos.txt file.**
 
 Fetching data from the **Open-Meteo API** was added to enrich user experience; however, error handling was implemented to manage possible internet connection issues.**The Open-Meteo API can be used starting from April 29, 2025**. If the user queries a photo with an earlier date, the program will raise an error. **However, this program was specifically designed to organize photos from a 3-day vacation in Mallorca on the dates 2025-05-24, 2025-05-25, and 2025-05-26**. The coordinates for Mallorca were used in the implementation. It provides the temperature during the first hour of each day. Open-Meteo was chosen because it is a free service.
 
@@ -81,8 +81,6 @@ The program starts when the user enters a number between 1 and 6 in the terminal
 
 **This program is designed for a specific date and location**. In the future, greater flexibility regarding date and location can be implemented. Currently, the temperature data reflects only the early hours of the day; additional metrics such as the daily average temperature may be added later. It is also possible to switch to a different weather API in future updates.
 
----
-**Made with 💫 magic and Python.**
 ---
 
 *Prepared by:* [Başak Yaralı]
