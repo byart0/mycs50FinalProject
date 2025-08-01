@@ -82,6 +82,11 @@ The program starts when the user enters a number between 1 and 6 in the terminal
 **This program is designed for a specific date and location**. In the future, greater flexibility regarding date and location can be implemented. Currently, the temperature data reflects only the early hours of the day; additional metrics such as the daily average temperature may be added later. It is also possible to switch to a different weather API in future updates.
 
 ---
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.
+
+---
 
 *Prepared by:* [Başak Yaralı]
 *Github:* [byart0]
